@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Страница каталога интернет-магазина Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header class="header">
-      <a href="#" class="logo">
+      <a href="index.html" class="logo">
         <img
-          src=""
+          src="image/logo.png"
           class="logo__img"
           width="145"
           height="36"
@@ -87,20 +88,25 @@
       <div class="wrapper">
         <section class="filter">
           <h2 class="filter__title">Фильтр:</h2>
-          <button class="button">Показать</button>
+          <button class="button" type="button">Показать</button>
         </section>
         <section class="sorting">
           <div class="sorting-wrapper">
             <h2 class="sorting__title">Сортировка:</h2>
-            <button class="sorting__button"></button>
-            <button class="sorting__button"></button>
+            <button class="sorting__button" type="button"></button>
+            <button class="sorting__button" type="button"></button>
           </div>
           <ul class="products">
             <li class="products__item">
               <article class="products__cart-item">
-                <img src="" alt="" class="products__image" /><button
-                  class="products__button"
-                ></button>
+                <img
+                  src="image/product-1.jpg"
+                  width="360"
+                  height="380"
+                  alt="Любительская селфи-палка"
+                  class="products__image"
+                />
+                <button class="products__button" type="button"></button>
                 <div class="products__wrapper">
                   <h3 class="products__title">Любительская селфи-палка</h3>
                   <p class="products__price">500 ₽</p>
@@ -109,9 +115,14 @@
             </li>
             <li class="products__item">
               <article class="products__cart-item">
-                <img src="" alt="" class="products__image" /><button
-                  class="products__button"
-                ></button>
+                <img
+                  src="image/product-2.jpg"
+                  width="360"
+                  height="380"
+                  alt="Профессиональная селфи-палка"
+                  class="products__image"
+                />
+                <button class="products__button" type="button"></button>
                 <div class="products__wrapper">
                   <h3 class="products__title">Профессиональная селфи-палка</h3>
                   <p class="products__price">1 500 ₽</p>
@@ -120,9 +131,14 @@
             </li>
             <li class="products__item">
               <article class="products__cart-item">
-                <img src="" alt="" class="products__image" /><button
-                  class="products__button"
-                ></button>
+                <img
+                  src="image/product-3.jpg"
+                  width="360"
+                  height="380"
+                  alt="Непотопляемая селфи-палка"
+                  class="products__image"
+                />
+                <button class="products__button" type="button"></button>
                 <div class="products__wrapper">
                   <h3 class="products__title">Непотопляемая селфи-палка</h3>
                   <p class="products__price">2 500 ₽</p>
@@ -131,9 +147,14 @@
             </li>
             <li class="products__item">
               <article class="products__cart-item">
-                <img src="" alt="" class="products__image" /><button
-                  class="products__button"
-                ></button>
+                <img
+                  src="image/product-4.jpg"
+                  width="360"
+                  height="380"
+                  alt="Селфи-палка «Следуй за мной»"
+                  class="products__image"
+                />
+                <button class="products__button" type="button"></button>
                 <div class="products__wrapper">
                   <h3 class="products__title">Селфи-палка «Следуй за мной»</h3>
                   <p class="products__price">4 900 ₽</p>
@@ -145,27 +166,33 @@
         </section>
       </div>
       <div class="main-navigation">
-        <button class="main-navigation__button main-navigation__button--prev">
+        <button
+          class="main-navigation__button main-navigation__button--prev"
+          type="button"
+        >
           вперед
         </button>
         <ul class="pagination">
           <li class="pagination__item">
-            <button class="pagination__button">1</button>
+            <button class="pagination__button" type="button">1</button>
           </li>
           <li class="pagination__item">
-            <button class="pagination__button">2</button>
+            <button class="pagination__button" type="button">2</button>
           </li>
           <li class="pagination__item">
-            <button class="pagination__button">3</button>
+            <button class="pagination__button" type="button">3</button>
           </li>
           <li class="pagination__item">
             <p class="pagination__button">...</p>
           </li>
           <li class="pagination__item">
-            <button class="pagination__button">15</button>
+            <button class="pagination__button" type="button">15</button>
           </li>
         </ul>
-        <button class="main-navigation__button main-navigation__button--next">
+        <button
+          class="main-navigation__button main-navigation__button--next"
+          type="button"
+        >
           назад
         </button>
       </div>
@@ -173,7 +200,7 @@
     <footer class="footer">
       <a href="#" class="logo">
         <img
-          src=""
+          src="image/logo-footer.png"
           class="logo__img"
           width="145"
           height="36"
@@ -201,23 +228,43 @@
         <ul class="social-list">
           <li class="social-list__item">
             <a href="" class="social-list__link">
-              <img src="" alt="фейсбук" class="social-list__image" />
+              <img
+                src="image/fb.svg"
+                width="9"
+                height="18"
+                alt="фейсбук"
+                class="social-list__image"
+              />
             </a>
           </li>
           <li class="social-list__item">
             <a href="" class="social-list__link">
-              <img src="" alt="инстаграмм" class="social-list__image" />
+              <img
+                src="image/instagram.svg"
+                width="16"
+                height="16"
+                alt="инстаграмм"
+                class="social-list__image"
+              />
             </a>
           </li>
           <li class="social-list__item">
             <a href="" class="social-list__link">
-              <img src="" alt="твиттер" class="social-list__image" />
+              <img
+                src="image/twitter.svg"
+                width="15"
+                height="14"
+                alt="твиттер"
+                class="social-list__image"
+              />
             </a>
           </li>
         </ul>
         <a href="" class="social-academy-link">
           <img
-            src=""
+            src="image/Academy.png"
+            width="115"
+            height="34"
             alt="логотип школы html academy"
             class="logo-list__image"
           />
