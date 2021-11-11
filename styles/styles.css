@@ -67,6 +67,7 @@ body {
   background: #ffe17f;
   box-sizing: border-box;
   margin-top: 40px;
+  min-height: 300px;
 }
 
 .logo--header {
@@ -145,7 +146,7 @@ body {
   text-align: right;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #000000 inherit;
+  color: #000000;
 
   text-decoration: none;
   background: none;
@@ -179,16 +180,28 @@ body {
   color: #000000;
 }
 
+.slider {
+  margin-top: -150px;
+  margin-bottom: 70px;
+}
+
 .slider-products {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 .slider-products__item {
   display: flex;
+  align-items: flex-end;
 }
 
 .slider-products__item:not(:first-child) {
   display: none;
+}
+
+.slider-products__wrapper {
+  padding-bottom: 36px;
 }
 
 .slider-image {
@@ -202,6 +215,8 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .slider-products__description {
@@ -211,6 +226,8 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+  margin: 0;
+  margin-bottom: 43px;
 }
 
 .button {
@@ -226,7 +243,14 @@ body {
   text-decoration: none;
 
   background-color: #ffe17f;
+  color: #000000;
   border: none;
+}
+
+.button--slider {
+  width: 220px;
+  margin-bottom: 75px;
+  display: inline-block;
 }
 
 .button:visited {
@@ -250,6 +274,10 @@ body {
   color: #000000;
 }
 
+.product-category {
+  margin-bottom: 82px;
+}
+
 .product-category-list {
   padding: 0;
   display: flex;
@@ -260,6 +288,7 @@ body {
 .wrapper-image-category {
   min-width: 160px;
   height: 160px;
+  margin-bottom: 32px;
 
   background-color: #ffe17f;
 
@@ -270,6 +299,7 @@ body {
 
 .product-category-list__text {
   max-width: 160px;
+  margin: 0;
 }
 
 .product-category-list__text {
@@ -299,6 +329,9 @@ body {
 
 .advantages-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 70px;
 }
 
 .advantages-list__title {
@@ -306,6 +339,8 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .advantages-list__item {
@@ -319,8 +354,8 @@ body {
 
 .advantages-list__image {
   position: absolute;
-  right: -136px;
-  top: 0;
+  right: -190px;
+  top: 13px;
 }
 
 .advantages-list-buttons {
@@ -337,7 +372,7 @@ body {
 }
 
 .advantages-list-buttons__item {
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   width: 280px;
 }
 
@@ -385,7 +420,7 @@ body {
 
 .information {
   padding-top: 90px;
-  padding-bottom: 87px;
+  padding-bottom: 41px;
 
   box-sizing: border-box;
 }
@@ -396,7 +431,7 @@ body {
   align-items: center;
   padding-top: 37px;
   padding-bottom: 45px;
-  margin-bottom: 97px;
+  margin-bottom: 138px;
 
   position: relative;
 }
@@ -473,6 +508,10 @@ body {
   margin: 0;
 }
 
+.information-about__text {
+  margin-bottom: 33px;
+}
+
 /* .information-about__text,
 .contacts__text,
 .working hours__text,
@@ -490,19 +529,19 @@ body {
   color: #000000;
   margin: 0;
   padding: 0;
-  margin-bottom: 52px;
+  margin-bottom: 68px;
 }
 
 .information-about__title {
-  margin-bottom: 35px;
+  margin-bottom: 46px;
 }
 
 .information-about__info {
-  margin-bottom: 70px;
+  margin-bottom: 73px;
 }
 
 .information-about-list__item {
-  margin-bottom: 31px;
+  margin-bottom: 20px;
 }
 
 .information-about-list__item p {
@@ -525,11 +564,11 @@ body {
 }
 
 .contacts__title {
-  margin-bottom: 35px;
+  margin-bottom: 46px;
 }
 
 .contacts__text {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
   margin-top: 0;
 }
 
@@ -557,7 +596,7 @@ body {
 }
 
 .address__text {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .working-hours__title {
@@ -585,9 +624,9 @@ body {
 
 .subscribe-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
 }
 
 .subscribe__text {
@@ -602,6 +641,7 @@ body {
   width: 600px;
   font-size: 18px;
   margin-top: auto;
+  padding-bottom: 10px;
 
   line-height: 30px;
   color: #444444;
@@ -641,9 +681,8 @@ body {
 
 .footer-information {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-top: 35px;
+  margin-top: 26px;
 }
 
 .footer-information__address {
@@ -653,12 +692,15 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
-  width: 238px;
+  width: 246px;
+  margin-right: 114px;
 }
 
 .footer-navigation {
   list-style: none;
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-navigation__link {
@@ -681,10 +723,19 @@ body {
   text-align: right;
   text-decoration: none;
   color: #ffffff;
+  margin-left: auto;
 }
 
 .footer-navigation__item {
   margin: 0 14px;
+}
+
+.footer-navigation .footer-navigation__item:first-child {
+  margin: 0;
+}
+
+.footer-navigation .footer-navigation__item:last-child {
+  margin-right: 0;
 }
 
 .social {
