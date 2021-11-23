@@ -84,6 +84,7 @@ body {
 }
 
 .header-info-wrapper {
+  margin-right: -11px;
   flex-grow: 1;
 }
 
@@ -211,7 +212,7 @@ body {
 
 .header__link--login {
   position: relative;
-  padding-left: 26px;
+  padding-left: 24px;
 }
 
 .header__link--compare::before {
@@ -219,7 +220,7 @@ body {
 
   position: absolute;
   top: 12px;
-  left: -1px;
+  left: 2px;
   width: 10px;
   height: 12px;
 
@@ -229,14 +230,14 @@ body {
 .header__link--compare {
   position: relative;
   padding-left: 21px;
-  margin-right: 39px;
+  margin-right: 47px;
 }
 
 .header__link--cart::before {
   content: "";
 
   position: absolute;
-  top: 0px;
+  top: 10px;
   left: -5px;
   width: 16px;
   height: 14px;
@@ -257,8 +258,8 @@ body {
   align-items: center;
 
   position: absolute;
-  top: -1px;
-  left: -20px;
+  top: 8px;
+  left: -19px;
 
   border-radius: 50%;
 
@@ -289,8 +290,9 @@ body {
   color: #000000;
 }
 
-..header-nav {
-  position: relative;
+.header-nav {
+  margin-left: -20px;
+  margin-top: -8px;
 }
 
 .header-nav-list {
@@ -337,6 +339,10 @@ body {
 }
 
 .header-nav-list__link--show-menu {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
   cursor: pointer;
 }
 
@@ -344,8 +350,8 @@ body {
   content: "";
 
   position: absolute;
-  right: -67px;
-  top: -13px;
+  right: -47px;
+  top: -1px;
 
   width: 50px;
   height: 50px;
@@ -1101,7 +1107,7 @@ body {
   color: #000000;
 
   margin-right: 171px;
-  padding-top: 17px;
+  padding-top: 13px;
   padding-bottom: 18px;
   width: 260px;
   border: 3px solid rgba(0, 0, 0, 0.1);
@@ -1146,7 +1152,7 @@ body {
   height: 14px;
 
   position: absolute;
-  bottom: 4px;
+  bottom: 8px;
   left: -34px;
 
   background-image: url("../image/arrow-free.svg");
@@ -1438,7 +1444,7 @@ body {
 
 .select-color__list {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: -4px;
   padding: 0;
 
   list-style-type: none;
